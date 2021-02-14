@@ -469,7 +469,7 @@ html, body
     color: #313131;
     font-size: 1.8em;
 }
-.presentation > h1 > em
+.presentation > h1 > span
 {
     font-style: normal;
     white-space: nowrap;
@@ -555,7 +555,7 @@ html, body
     font-size: 1.5em;
     color: #313131;
 }
-.install-alert-box > p > em
+.install-alert-box > p > span
 {
     font-style: normal;
     white-space: nowrap;
