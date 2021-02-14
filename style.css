@@ -680,3 +680,10 @@ html, body
         width: 45%;
     }
 }
+@media only screen and (max-height: 400px)
+{
+    .install-alert
+    {
+        display: none;
+    }
+}
