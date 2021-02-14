@@ -447,15 +447,14 @@ html, body
     height: calc(100% - 100px);
     background-color: #F8F8F8;
     margin-top: 100px;
-    z-index: -1;
+    z-index: -5;
 }
 .presentation
 {
     width: 50%;
     height: 100%;
     min-width: 600px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -631,6 +630,10 @@ html, body
         min-width: 0;
         width: 100%;
     }
+    .content
+    {
+        height: auto;
+    }
 }
 @media only screen and (max-width: 360px)
 {
@@ -659,7 +662,7 @@ html, body
 {
     .presentation > h1
     {
-        margin-bottom: auto;
+        margin-bottom: 20px;
     }
 }
 @media only screen and (max-width: 360px)
@@ -678,12 +681,5 @@ html, body
     .install-alert-box > button
     {
         width: 45%;
-    }
-}
-@media only screen and (max-height: 500px)
-{
-    .install-alert
-    {
-        display: none;
     }
 }
