@@ -65,7 +65,7 @@ html, body
 .wa
 {
     height: 100px;
-    width: 60px;
+    width: 65px;
 }
 .menu-link > a > .wa .cls-1
 {
@@ -218,7 +218,7 @@ html, body
     transition: background-color 1s;
     z-index: 5;
 }
-.mobile-menu-div
+.mobile-menu-list
 {
     transform: translateX(-300px);
     position: absolute;
@@ -667,7 +667,7 @@ html, body
 }
 @media only screen and (max-width: 360px)
 {
-    .mobile-menu-div
+    .mobile-menu-list
     {
         width: 80%;
     }

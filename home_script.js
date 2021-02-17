@@ -16,7 +16,7 @@ const menuButton = document.querySelector(".mobile-menu-button");
 const mobileLogo = document.querySelector(".mobile-logo");
 
 const mobileMenu = document.querySelector(".mobile-menu");
-const mobileMenuDiv = document.querySelector(".mobile-menu-div");
+const mobileMenuList = document.querySelector(".mobile-menu-list");
 const mobileMenuExit = document.querySelector(".mobile-menu-exit");
 
 // desktop search input animation
@@ -97,11 +97,11 @@ menuButton.addEventListener("click", function() {
 
     document.body.style.overflow = "hidden";
     mobileMenu.style.display = "block";
-    mobileMenuDiv.style.boxShadow = "20px 0px 35px #00133f2b";
+    mobileMenuList.style.boxShadow = "20px 0px 35px #00133f2b";
 
     setTimeout(function() {
         mobileMenu.style.backgroundColor = "#00257b2a";
-        mobileMenuDiv.classList.add("open");
+        mobileMenuList.classList.add("open");
     }, 50)
 
     setTimeout(function() {
@@ -122,11 +122,11 @@ document.body.addEventListener("touchend", e => {
 
         document.body.style.overflow = "hidden";
         mobileMenu.style.display = "block";
-        mobileMenuDiv.style.boxShadow = "20px 0px 35px #00133f2b";
+        mobileMenuList.style.boxShadow = "20px 0px 35px #00133f2b";
 
         setTimeout(function() {
             mobileMenu.style.backgroundColor = "#00257b2a";
-            mobileMenuDiv.classList.add("open");
+            mobileMenuList.classList.add("open");
         }, 50)
 
         setTimeout(function() {
@@ -141,21 +141,21 @@ mobileMenuExit.addEventListener("click", function() {
     document.body.style.overflow = "initial";
 
     mobileMenu.style.backgroundColor = "transparent";
-    mobileMenuDiv.classList.remove("open");
+    mobileMenuList.classList.remove("open");
 
     mobileMenuExit.style.display = "none";
-    mobileMenuDiv.style.boxShadow = "none";
+    mobileMenuList.style.boxShadow = "none";
 
     setTimeout(function() {
         mobileMenu.style.display = "none";
     }, 400)
 })
 // slide exit
-mobileMenuDiv.addEventListener("touchstart", e => {
+mobileMenuList.addEventListener("touchstart", e => {
     touchStart = e.targetTouches[0].clientX;
 })
 
-mobileMenuDiv.addEventListener("touchmove", e => {
+mobileMenuList.addEventListener("touchmove", e => {
     touchEnd = e.targetTouches[0].clientX;
 })
 
@@ -165,10 +165,10 @@ mobileMenu.addEventListener("touchend", e => {
         document.body.style.overflow = "initial";
 
         mobileMenu.style.backgroundColor = "transparent";
-        mobileMenuDiv.classList.remove("open");
+        mobileMenuList.classList.remove("open");
 
         mobileMenuExit.style.display = "none";
-        mobileMenuDiv.style.boxShadow = "none";
+        mobileMenuList.style.boxShadow = "none";
 
         setTimeout(function() {
             mobileMenu.style.display = "none";
